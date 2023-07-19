@@ -1,0 +1,16 @@
+[anand]
+localhost ansible_connection=local
+
+[vm]
+192.168.137.111 ansible_user=anand
+
+[arivu]
+10.163.14.53
+
+[win]
+10.163.14.52
+[win:vars]
+ansible_connection=winrm 
+ansible_user=Kirthana 
+ansible_password=1973
+ansible_winrm_server_cert_validation=ignore

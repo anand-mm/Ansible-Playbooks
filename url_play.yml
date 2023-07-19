@@ -1,0 +1,30 @@
+---
+
+ - name: Running All Instances Tenders Count
+   hosts: localhost
+   vars_files: 
+      - instance_var.yml
+   tasks:
+  
+      - name: Running TenderCount URL
+        uri:
+          url: https://demoetenders.tn.nic.in/dora/keralaReport
+          method: GET
+          headers:
+            api_key: 96cfe9f5-8cf1-40e1-9432-8adff9f82eeb
+            # X-tenant: "{{ item.value.url }}"
+            content-Type: text/csv
+          return_content:  
+        # with_dict: "{{ instance_names }}"
+        register: hello
+      - name: debug
+        debug:
+          var: hello
+
+        
+
+
+
+
+
+    

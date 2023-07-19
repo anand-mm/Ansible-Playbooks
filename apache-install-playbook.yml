@@ -1,0 +1,10 @@
+---
+- name: Playbook1
+  hosts: all
+  tasks:
+    - name: Copy files
+      copy:
+        src: /home/dora/Documents/API-Documentation.odt
+        dest: /home/dora/Downloads/
+
+

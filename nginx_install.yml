@@ -1,0 +1,31 @@
+---
+
+- name: Nginx Install & start service
+  hosts: anand
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: latest
+
+    - name: Start nginx
+      service:
+         name: nginx
+         state: started
+
+    - name: Stop nginx
+      service:
+         name: nginx
+         state: stopped
+
+    - name: Restart nginx
+      service:
+         name: nginx
+         state: restarted
+
+    - name: Reload nginx
+      service:
+         name: nginx
+         state: reloaded 

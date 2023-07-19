@@ -1,0 +1,43 @@
+instance_names:
+   # #  - meghalayatenders.gov.in
+   #  - etenders.hry.nic.in
+   #  - assamtenders.gov.in
+   #  - eproc.punjab.gov.in
+   #  - manipurtenders.gov.in
+    Meghalaya: 
+      url: meghalayatenders.gov.in
+   # Haryana: 
+   #  url: etenders.hry.nic.in
+   # Assam:
+   #  url: assamtenders.gov.in
+   # Kerala: 
+   #  url: etenders.kerala.gov.in
+   # Punjab:
+   #  url: eproc.punjab.gov.in
+   # Manipur:  manipurtenders.gov.in
+   # CIL: coalindiatenders.nic.in
+   # Uttar_Pradesh: etender.up.nic.in
+   # Goa: eprocure.goa.gov.in
+   # Tripura: tripuratenders.gov.in
+   # Madhya_Pradesh: mptenders.gov.in
+
+   # Chandigarh: etenders.chd.nic.in
+   # Odisha: tendersodisha.gov.in
+   # West_Bengal: wbtenders.gov.in
+   # Lakshaweep: tendersutl.gov.in
+   # NCT_of_Delhi: govtprocurement.delhi.gov.in
+   # Jammu_and_Kashmir: jktenders.gov.in
+   # Sikkim: sikkimtender.gov.in
+   # PMGSY: pmgsytenders.gov.in
+   # Nagaland: nagalandtenders.gov.in
+   # Daman_and_Diu: ddtenders.gov.in
+   # Mizoram: mizoramtenders.gov.in
+   # Himachal_Pradesh: hptenders.gov.in
+   # Arunachal_Pradesh: arunachaltenders.gov.in
+   # Puducherry: pudutenders.gov.in
+   # Tamil_Nadu: tntenders.gov.in
+   # IOCL: iocletenders.nic.in
+   # UT_Ladakh: tenders.ladakh.gov.in
+   # CPPP_Portal 2: etenders.gov.in
+   # CPPP_Portal 1: eprocure.gov.in
+   # CPCL: cpcletenders.nic.in

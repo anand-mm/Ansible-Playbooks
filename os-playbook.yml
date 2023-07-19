@@ -1,0 +1,22 @@
+---
+
+- name: Playbook1
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+
+     - name: Getting Ansible OS Family
+       when: ansible_os_family
+       register: os   
+
+     - name: Getting Os Information
+       command: cat /etc/os-release
+       register: command_output
+
+     - include: play1.yml
+       when: ansible_os_family == 'Linuxmint'
+       register: 
+
+     - debug:
+          var: os

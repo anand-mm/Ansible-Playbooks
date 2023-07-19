@@ -1,0 +1,35 @@
+---
+
+ - name: Running Simple URL
+   hosts: localhost
+   tasks:
+#     - name: Running URL
+#       uri:
+#         url: https://demoetenders.tn.nic.in/dora/secureApiGenerator
+#         method: GET
+#       register: output
+
+#     - name: Running CSV File URL
+#       uri:
+#         url: https://demoetenders.tn.nic.in/dora/keralaReport
+#         method: GET
+#         body:
+#           startDate: "2022-01-10"
+#           endDate: "2022-05-10"
+#         headers:
+#           api_key: 96cfe9f5-8cf1-40e1-9432-8adff9f82eeb
+
+     - name: Running TenderCount URL
+       uri:
+         url: https://demoetenders.tn.nic.in/dora/getTenderCount
+         method: GET
+         body:
+           tenderStage: AOC
+         headers:
+           api_key: 5f2b9577-9887-46dc-8293-2447c2b80009
+           X-tenant: tripuratenders.gov.in
+         return_content: yes
+       register: output
+     
+     - debug:
+         var: output.json

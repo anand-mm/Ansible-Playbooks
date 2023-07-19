@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+     - name: Distribution
+       debug:
+         msg: OS version = {{ ansible_distribution }}
+
+     - debug: 
+          var: ansible_facts.stdout_lines

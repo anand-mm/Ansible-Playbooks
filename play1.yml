@@ -1,0 +1,6 @@
+---
+- name: Install Apache Server
+  apt:
+    name: nginx
+    state: latest
+  become: yes
